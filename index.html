@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baloon Login</title>
+    <link rel="shortcut icon" href="/assets/balao.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,400;0,500;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-ash_gray font-sofia text-dark_purple">
+    <header class="bg-gradient-to-r from-raspberry to-vermillion flex justify-between">
+        <div>
+            <box-icon type='solid' name='balloon' color='#331832' animation='tada'
+                class="w-12 h-10 p-1 mx-7 my-2 bg-papaya rounded-full"></box-icon>
+        </div>
+        <div class="flex items-center">
+            <div class="text-xl">
+                <a href="index.html" class="mx-5 hover:text-papaya">Início</a>
+                <a href="" class="mx-5 hover:text-papaya">Sobre o Balloon</a>
+                <a href="" class="mx-5 hover:text-papaya">Contato</a>
+                <a href="" class="mx-5 hover:text-papaya">Entrar</a>
+            </div>
+            <div class="mx-4">
+                <button
+                    class="mx-2 px-3 py-1 bg-papaya rounded-md md:hover:scale-125 md:duration-500 text-2xl font-medium shadow-lg">Registre-se</button>
+            </div>
+        </div>
+    </header>
+    <section class="flex items-center justify-center">
+        <div class="bg-white w-auto h-auto my-10 rounded-lg shadow-2xl border">
+            <div class="my-10 mx-24 text-center">
+                <h1 class="text-6xl">Registre-se!</h1>
+            </div>
+            <div class="mx-7 text-center">
+                <div>
+                    <p class="me-2 text-xl">Digite o seu e-mail:</p>
+                    <input type="email" name="" id="registroEmail" placeholder="exemplo@email.com" size="30"
+                        class="border rounded px-2 shadow">
+                    <div class="text-center">
+                        <p id="emailError"></p>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p class="me-2 text-xl">Digite sua senha:</p>
+                    <input type="password" name="" id="registroSenha" placeholder="*********" size="30"
+                        class="border rounded px-2 shadow">
+                    <div class="text-center">
+                        <p id="senhaError"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center text-xl my-6">
+                <button class="bg-raspberry rounded text-papaya px-3 py-1 hover:bg-vermillion shadow-md"
+                    id="registrar">Registrar</button>
+            </div>
+            <div class="mx-6 font-medium" id="senhaRequisitos">
+                <p class="text-md">Sua senha deve conter no mínimo:</p>
+                <ul class="text-sm ms-2">
+                    <li id="senhaCheck01" class="">- Uma letra minúscula</li>
+                    <li id="senhaCheck02" class="">- Uma letra maiúscula</li>
+                    <li id="senhaCheck03" class="">- Um caractere especial (*/_¨-,.[]^%$#@&)</li>
+                    <li id="senhaCheck04" class="">- 8 carateres e no máximo 12</li>
+                </ul>
+            </div>
+            <div class="text-center my-6">
+                <p class="text-md">Já faz parte do Balloon? Então faça <a href="" class="text-raspberry">login.</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-raspberry to-vermillion h-full flex items-center justify-around">
+        <div class="p-12">
+            <img src="/assets/vecteezy_air-balloon-logo-design_10514063.jpg" alt="" class="w-44 h-42 py-3 rounded-full">
+            <p>Copyright © 2020 Landify UI Kit.</p>
+            <p> All rights reserved</p>
+        </div>
+        
+        <div class="ms-64">
+            <h2 class="text-2xl pb-6">A Balloon</h2>
+            <ul>
+                <li class="py-1 hover:text-papaya"><a href="">Sobre nós</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Blog</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Informações importantes</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Política de Privacidade</a></li>
+            </ul>
+        </div>
+        <div class="me-64">
+            <h2 class="text-2xl pb-6">Institucional</h2>
+            <ul>
+                <li class="py-1 hover:text-papaya"><a href="">Dúvidas frequentes</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Minha conta</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Contato</a></li>
+                <li class="py-1 hover:text-papaya"><a href="">Localização</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
